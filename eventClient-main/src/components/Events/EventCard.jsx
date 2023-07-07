@@ -53,7 +53,7 @@ const CustomDropdown = ({ options, onSelect }) => {
 const EventCard = (props) => {
   const [selectedCategory, setSelectedCategory] = useState('');
   const options = [
-    { label: 'Opción 1', value: 'ce38db4b-19b0-474f-bd81-3dfae86dcc9e', price: 20 },
+    { label: 'Opción 1', value: '63f865ca-a75c-4477-b1fe-286f1d54be96', price: 20 },
     { label: 'Opción 2', value: 'opcion2', price: 2.0 },
     { label: 'Opción 3', value: 'opcion3', price: 2.5 },
     // Agregar más opciones de categoría aquí
@@ -119,7 +119,7 @@ const EventCard = (props) => {
     const totalValue = document.getElementById('total').innerText;
 
     const ticketQuantity = parseInt(numberFieldValue, 10); // Cantidad de tickets
-    const BaseUrl = 'http://localhost:8080';
+    const BaseUrl = 'https://apievens-v2-production.up.railway.app';
     const userToken = localStorage.getItem('token');
 
     const data = {

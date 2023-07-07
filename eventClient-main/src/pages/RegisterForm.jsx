@@ -10,7 +10,7 @@ function Registration() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const BaseURL = 'http://localhost:8080'
+  const BaseURL = 'https://apievens-v2-production.up.railway.app'
   const handleUsernameChange = (event) => {
       setUsername(event.target.value);
   };

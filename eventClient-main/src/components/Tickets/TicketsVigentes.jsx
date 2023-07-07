@@ -29,7 +29,7 @@ const TicketsVigentes = (props) => {
       const fetchTickets = async () => {
         try {
           const userToken = localStorage.getItem('token');
-          const BaseUrl = 'http://localhost:8080';
+          const BaseUrl = 'https://apievens-v2-production.up.railway.app';
           const config = {
             headers: {
               'Authorization': `Bearer ${userToken}`,
@@ -107,15 +107,15 @@ const TicketsVigentes = (props) => {
       setShowBuyTicketPopup(false);
       
       
-      const BaseUrl = 'http://localhost:8080';
+      const BaseUrl = 'https://apievens-v2-production.up.railway.app';
       const userToken = localStorage.getItem('token');
 
 
-      const userDestination = '3eb30878-5dc1-4695-9ed0-75a9dd71e739';
+      const userDestination = '44c5fc80-f8f9-4f33-9919-6f88a09118ae';
       // Aquí deberías agregar la lógica para verificar si la compra fue exitosa o no.
        // Cambiar por la lógica real
   
-      const ticketID = '28703ad8-abe0-497e-816c-2c553020cd17'
+      const ticketID = '5c193df7-77d5-4f3c-b1a4-29898f1bc59f'
       const formTransfer = {
         newOwnerCode : userDestination,
         ticketCode: ticketID

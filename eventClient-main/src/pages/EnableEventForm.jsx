@@ -164,7 +164,7 @@ const EnableEventForm = () => {
     const sponsorsValues= sponsors.map((sponsor) => {return{name: sponsor.value}});
     const eventDuration = document.getElementById("duration").value;
    
-    const BaseUrl = 'http://localhost:8080';
+    const BaseUrl = 'https://apievens-v2-production.up.railway.app';
     const userToken = localStorage.getItem('token');
     //const selectedCategory = event.target.elements.category.value;
     
